@@ -79,5 +79,19 @@ namespace TicTacToe
                 board[move] = letter;
             }
         }
+        public string whoStartFirst()
+        {
+            int HEAD = 0;
+            int TAIL = 1;
+            string[] str = new string[2] { "USER", "COMPUTER" };
+            Random random = new Random();
+            int value = random.Next(0, 2);
+            if (value == HEAD)
+            {
+                return str[0];
+            }
+            else
+                return str[1];
+        }
     }
 }

@@ -15,6 +15,8 @@ namespace TicTacToe
             Console.WriteLine(move);
             ticTacToeGame.MakingDesiredMove(board, move, userOption);
             ticTacToeGame.showBoard(board);
+            string firstPlayer = ticTacToeGame.whoStartFirst();
+            Console.WriteLine("First move play by :"+firstPlayer);
         }
     }
 }
