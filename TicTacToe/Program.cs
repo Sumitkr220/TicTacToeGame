@@ -13,6 +13,8 @@ namespace TicTacToe
             ticTacToeGame.showBoard(board);
             int move = ticTacToeGame.userDesiredMove(board);
             Console.WriteLine(move);
+            ticTacToeGame.MakingDesiredMove(board, move, userOption);
+            ticTacToeGame.showBoard(board);
         }
     }
 }
