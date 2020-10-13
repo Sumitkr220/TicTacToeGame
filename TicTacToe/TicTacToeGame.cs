@@ -60,5 +60,16 @@ namespace TicTacToe
                 }
             }
         }
+        public int userDesiredMove(char[] board)
+        {
+            Console.WriteLine("Choose your move b/w 1 to 9");
+            int place = Convert.ToInt32(Console.ReadLine());
+            if ((place >= 1 && place <= 9) && board[place] == ' ')
+            {
+                return place;
+            }
+            else
+                return -1;
+        }
     }
 }

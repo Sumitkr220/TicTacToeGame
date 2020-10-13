@@ -11,6 +11,8 @@ namespace TicTacToe
             char userOption = ticTacToeGame.chooseLetterOption();
             char computerOption = ticTacToeGame.getcomputerOption();
             ticTacToeGame.showBoard(board);
+            int move = ticTacToeGame.userDesiredMove(board);
+            Console.WriteLine(move);
         }
     }
 }
